@@ -26,7 +26,24 @@ body {
 
 // ----------------------------
 
-.button {}
+.button {
+    display: inline-block;
+    text-align: center;
+    padding: 16px 30px;
+    background-color: #3D96F4;
+    color: #fff;
+    height: 52px;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.57;
+    /* 22/14 */
+
+    &:hover {
+        background-color: #65abf6;
+    }
+}
 
 // header ----------------------------
 
@@ -36,6 +53,7 @@ body {
 
     &__container {
         display: flex;
+        column-gap: 35px;
         min-height: 116px;
         padding-top: 5px;
         padding-bottom: 5px;
@@ -69,7 +87,11 @@ body {
 
     // .menu__list
 
-    &__list {}
+    &__list {
+        display: flex;
+        column-gap: 35px;
+        justify-content: flex-end;
+    }
 
     // .menu__item
 
@@ -77,18 +99,53 @@ body {
 
     // .menu__link
 
-    &__link {}
+    &__link {
+        color: white;
+        font-size: 16px;
+        line-height: 1.62;
+        /* 26/16 */
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+    }
 }
 
-.icon-menu {}
-
 .cart-header {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    &:hover .cart-header__text {
+        text-decoration: underline;
+    }
 
     // .cart-header__text
 
-    &__text {}
+    &__text {
+        font-size: 18px;
+        line-height: 1.55;
+        /* 28/18 */
+        color: white;
+    }
 
     // .cart-header__quantity
 
-    &__quantity {}
+    &__quantity {
+        background: rgba(129, 129, 139, 0.3);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+.icon-menu {
+    display: none;
 }

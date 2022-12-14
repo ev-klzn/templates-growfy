@@ -20,7 +20,6 @@ li {
 a,
 a:visited {
   text-decoration: none;
-  color: inherit;
 }
 
 a:hover {
@@ -52,7 +51,7 @@ html {
 
 .button {
   cursor: pointer;
-  background-color: inherit;
+  color: inherit;
 }
 
 input {
@@ -94,10 +93,31 @@ body {
           flex: 1 1 auto;
 }
 
+.button {
+  display: inline-block;
+  text-align: center;
+  padding: 16px 30px;
+  background-color: #3D96F4;
+  color: #fff;
+  height: 52px;
+  border-radius: 50px;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.57;
+  /* 22/14 */
+}
+.button:hover {
+  background-color: #65abf6;
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-column-gap: 35px;
+     -moz-column-gap: 35px;
+          column-gap: 35px;
   min-height: 116px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -109,4 +129,65 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+}
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 35px;
+     -moz-column-gap: 35px;
+          column-gap: 35px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.menu__link {
+  color: white;
+  font-size: 16px;
+  line-height: 1.62;
+  /* 26/16 */
+}
+.menu__link:hover {
+  text-decoration: underline;
+}
+
+.cart-header {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+.cart-header:hover .cart-header__text {
+  text-decoration: underline;
+}
+.cart-header__text {
+  font-size: 18px;
+  line-height: 1.55;
+  /* 28/18 */
+  color: white;
+}
+.cart-header__quantity {
+  background: rgba(129, 129, 139, 0.3);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.icon-menu {
+  display: none;
 }
