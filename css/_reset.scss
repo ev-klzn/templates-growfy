@@ -12,6 +12,8 @@
     box-sizing: border-box;
 }
 
+ul,
+ol,
 li {
     list-style: none;
 }
@@ -19,6 +21,7 @@ li {
 a,
 a:visited {
     text-decoration: none;
+    color: inherit;
 }
 
 a:hover {
@@ -48,18 +51,30 @@ html {
     font-size: 16px;
 }
 
-._ibg {
-    position: relative;
-
-    img {
-        object-fit: cover;
-        // object-position: top; 
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-    }
+.button {
+    cursor: pointer;
+    background-color: inherit;
 }
+
+input {
+    font-weight: inherit;
+    font-size: inherit;
+    color: inherit;
+    font-family: inherit;
+}
+
+// ._ibg {
+//     position: relative;
+
+//     img {
+//         object-fit: cover;
+//         // object-position: top; 
+//         position: absolute;
+//         width: 100%;
+//         height: 100%;
+//         top: 0;
+//         left: 0;
+//     }
+// }
 
 /* reset end ------------------------------------------------------------ */
