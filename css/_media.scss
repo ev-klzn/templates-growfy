@@ -1,0 +1,32 @@
+/* media ---------------------------------------------------------------- */
+
+// 1050 из макета (контейнер + отступы)
+
+[class*="__container"] {
+    max-width: 1050px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+// №1
+@media (max-width: 1050px) {
+    [class*="__container"] {
+        max-width: 970px;
+    }
+}
+
+// №2 планшеты
+@media (max-width: 991.98px) {
+    [class*="__container"] {
+        max-width: 750px;
+    }
+}
+
+// №3 мобилки
+@media (max-width: 767.98px) {
+    [class*="__container"] {
+        max-width: none;
+    }
+}
+
+/* media end ------------------------------------------------------------ */
