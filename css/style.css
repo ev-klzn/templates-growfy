@@ -161,6 +161,11 @@ body {
           flex: 0 0 auto;
 }
 
+.menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
 @media (max-width: 767.98px) {
   .menu__body {
     position: fixed;
