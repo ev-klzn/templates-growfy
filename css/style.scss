@@ -32,7 +32,7 @@ body {
     padding: 16px 30px;
     background-color: #3D96F4;
     color: #fff;
-    height: 52px;
+    max-height: 52px;
     border-radius: 50px;
     letter-spacing: 2px;
     font-size: 14px;
@@ -41,9 +41,12 @@ body {
     /* 22/14 */
     transition: background-color 0.3s ease 0s;
 
-
     &:hover {
         background-color: #65abf6;
+    }
+
+    @media (max-width: 991.98px) {
+        padding: 14px 20px;
     }
 }
 
@@ -60,6 +63,10 @@ body {
         padding-top: 5px;
         padding-bottom: 5px;
         align-items: center;
+
+        @media (max-width: 991.98px) {
+            column-gap: 25px;
+        }
     }
 
     // .header__logo
@@ -78,21 +85,25 @@ body {
 
     // .header__button
 
-    &__button {}
+    &__button {
+        flex: 0 0 auto;
+    }
 }
 
 .menu {
-
-    // .menu__icon
-
-    &__icon {}
 
     // .menu__list
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
+        row-gap: 3px;
         column-gap: 35px;
         justify-content: flex-end;
+
+        @media (max-width: 991.98px) {
+            column-gap: 25px;
+        }
     }
 
     // .menu__item
@@ -150,4 +161,35 @@ body {
 
 .icon-menu {
     display: none;
+
+    @media (max-width: 991.98px) {
+        display: block;
+        flex: 0 0 30px;
+        height: 18px;
+        position: relative;
+        z-index: 5;
+    }
+
+    span,
+    &::before,
+    &::after {
+        content: '';
+        right: 0;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
+    }
+
+    span {
+        top: calc(50% - 1px);
+    }
 }
