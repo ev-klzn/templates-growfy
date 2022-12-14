@@ -39,6 +39,8 @@ body {
     font-weight: 500;
     line-height: 1.57;
     /* 22/14 */
+    transition: background-color 0.3s ease 0s;
+
 
     &:hover {
         background-color: #65abf6;

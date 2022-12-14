@@ -106,6 +106,9 @@ body {
   font-weight: 500;
   line-height: 1.57;
   /* 22/14 */
+  -webkit-transition: background-color 0.3s ease 0s;
+  -o-transition: background-color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
 }
 .button:hover {
   background-color: #65abf6;
