@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../freelancer_ls/fls_18-SCSS/fls_18"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "growfy"
+	}
+}
